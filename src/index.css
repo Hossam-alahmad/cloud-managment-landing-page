@@ -1,0 +1,55 @@
+@tailwind base;
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("./Fonts/Poppins-Medium.ttf");
+}
+@layer base {
+    * {
+        @apply font-["Poppins-Medium"];
+    }
+    body {
+        @apply bg-zinc-100;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold;
+    }
+    h1 {
+        @apply text-3xl lg:text-5xl;
+    }
+    h2 {
+        @apply text-2xl lg:text-4xl;
+    }
+    h3 {
+        @apply text-xl lg:text-3xl;
+    }
+    h4 {
+        @apply text-lg lg:text-2xl;
+    }
+    h5 {
+        @apply text-[1.1rem] lg:text-xl;
+    }
+    h6 {
+        @apply text-[1rem] lg:text-lg;
+    }
+    li {
+        @apply p-4;
+    }
+}
+@tailwind components;
+@layer components {
+    .btn-primary {
+        @apply text-white border bg-sky-700 border-sky-700 p-4 rounded transition-all hover:bg-sky-600 hover:border-sky-600;
+    }
+    .navlist-hover {
+        @apply hover:text-sky-700 transition-all;
+    }
+    .sidebar-hover {
+        @apply hover:pl-6 hover:text-sky-700 transition-all;
+    }
+}
+@tailwind utilities;
